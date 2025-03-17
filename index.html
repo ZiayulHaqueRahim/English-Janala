@@ -40,9 +40,16 @@
     </div>
 <!--     vocbularies -->
 
-    <div  id="learn" class="learn text-center flex flex-row gap-5">
+    <div  id="learn" class="learn text-center flex flex-col  gap-5 gap-5">
             <h2 class="tex-2xl font-bold text-center py-10">Let's Learn Vocabularies</h2>
             <div  id="learn-categories">
+
+            </div>
+            <div id="start-info" class=" flex-col gap-3 hidden py-7  ">
+                <p class="text-xl  text-center py-3">আপনি এখনো কোন Lesson Select করেন নি</p>
+                <h3 class=" text-2xltext-center font-bold py-3 ">একটি Lesson Select করুন।</h3>
+            </div>
+            <div id="card-element" class="grid  grid-cols-3 gap-3 py-2 ">
 
             </div>
     </div>
@@ -89,7 +96,20 @@
 
     </div>
 
+     <!-- Open the modal using ID.showModal() method -->
 
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
 
 
